@@ -1,0 +1,209 @@
+
+/*SMARTPHONE*/
+@media (max-width: 599px) {
+
+
+    //generales
+    .texto-principal {
+        padding-top: 10px;
+    }
+
+    .rubiiecito {
+        transition: none;
+    }
+    
+    .rubiiecito:hover {
+        transform: none;
+    }
+
+
+    //galeria
+    .galeria1 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        margin-left: 0px;
+    
+    }
+
+
+    //quien soy
+    .quien-soy__p {
+        font-size: 16px;
+    }
+
+    .quien-soy__tabla {
+        font-size: 16px;
+    }
+
+    //pixel car
+    .contenedor-pixel {
+        width: 100%;
+
+        .grid-pixel {
+            display: grid;
+            grid-template-columns: 80%;
+            gap: 20px;
+            justify-content: center;
+            
+            a img {
+                width: 100%;
+                margin: 0px;
+                border: rgb(31, 31, 31) solid 4px;
+                box-shadow: rgb(0, 0, 0) 3px 3px 10px;
+                transition: none;
+            
+                &:hover {
+                    transform: none;
+                }
+            }
+        
+        }
+    
+    }
+
+    //cuadros
+    .contenedor-cuadros {
+        width: 100%;
+
+        .grid-cuadros {
+            display: grid;
+            grid-template-columns: 80%;
+            gap: 20px;
+            justify-content: center;
+                
+            a img {
+                width: 100%;
+                margin: 0px;
+                border: rgb(31, 31, 31) solid 4px;
+                box-shadow: rgb(0, 0, 0) 3px 3px 10px;
+                transition: none;
+                
+                &:hover {
+                    transform: none;
+                }
+            }
+            
+        }
+    
+    }
+
+
+    //graffitis
+    .contenedor-graff {
+        width: 100%;
+
+        .grid-graff {
+            display: grid;
+            grid-template-columns: 80%;
+            gap: 20px;
+            justify-content: center;
+                
+            a img {
+                width: 100%;
+                margin: 0px;
+                border: rgb(31, 31, 31) solid 4px;
+                box-shadow: rgb(0, 0, 0) 3px 3px 10px;
+                transition: none;
+                
+                &:hover {
+                    transform: none;
+                }
+            }
+            
+        }
+    
+    }
+
+    .destacada1 {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+} 
+
+
+/*TABLET*/
+@media (min-width:600px) and ( max-width: 899px) {
+
+
+    //pixel car
+    .contenedor-pixel {
+        width: 100%;
+
+        .grid-pixel {
+            display: grid;
+            grid-template-columns: 30% 30% 30%;
+            gap: 20px;
+            justify-content: center;
+            
+            a img {
+                width: 100%;
+                margin: 0;
+                border: rgb(31, 31, 31) solid 4px;
+                box-shadow: rgb(0, 0, 0) 3px 3px 10px;
+                transition: none;
+            
+                &:hover {
+                    transform: none;
+                }
+            }
+        
+        }
+    
+    }
+
+    //grafitis
+    .contenedor-graff {
+        width: 100%;
+
+        .grid-graff {
+            display: grid;
+            grid-template-columns: 30% 30% 30%;
+            gap: 20px;
+            justify-content: center;
+            
+            a img {
+                width: 100%;
+                margin: 0;
+                border: rgb(31, 31, 31) solid 4px;
+                box-shadow: rgb(0, 0, 0) 3px 3px 10px;
+                transition: none;
+            
+                &:hover {
+                    transform: none;
+                }
+            }
+        
+        }
+    
+    }
+
+    //cuadros
+    .contenedor-cuadros {
+        width: 100%;
+
+        .grid-cuadros {
+            display: grid;
+            grid-template-columns: 30% 30% 30%;
+            gap: 20px;
+            justify-content: center;
+            
+            a img {
+                width: 100%;
+                margin: 0;
+                border: rgb(31, 31, 31) solid 4px;
+                box-shadow: rgb(0, 0, 0) 3px 3px 10px;
+                transition: none;
+            
+                &:hover {
+                    transform: none;
+                }
+            }
+        
+        }
+    
+    }
+}

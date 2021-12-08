@@ -1,0 +1,72 @@
+/*OPERACIONES*****************/
+
+@each $margin in 10, 20, 30, 40, 50 {
+    .margin-#{$margin} {
+        margin: #{$margin}px;
+    }
+}
+
+@each $padding in 10, 20, 30, 50 {
+    .padding-#{$padding} {
+        padding: #{$padding}px;
+    }
+}
+
+@for $ancho from 1 through 4 {
+    .ancho-#{$ancho} {
+        width: 25% * $ancho;
+    }
+}
+
+@for $alto from 1 through 4 {
+    .alto-#{$alto} {
+        height: 20px * $alto;
+    }
+}
+
+@mixin tamanio-text ($tamanio) {
+    @if $tamanio == pais {
+        font-style: 20px;
+    } @else if $tamanio == ciudad {
+        font-size: 16px;
+    } @else if $tamanio == nombre {
+        font-size: 14px;
+    } @else{
+        font-size: 12px;
+    }
+    
+}
+
+//MAPAS:
+
+$colores: (
+    azul: blue,
+    rojo: red,
+    amarillo: yellow,
+    verde: green,
+    celeste: lightblue,
+    rosa: pink,
+
+);
+@each $color, $colorines in $colores {
+    .color-#{$color}{
+        color: $colorines;
+    }
+    
+}
+
+$font-size: (
+    pequeño: 14px,
+    mediano: 16px,
+    grande: 20px,
+    muy-grande: 24px,
+    gigante: 30px,
+);
+@each $medida, $pixel in $font-size {
+    .fuente-#{$medida}{
+        font-size: $pixel;
+    }
+    
+}
+
+
