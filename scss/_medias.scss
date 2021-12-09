@@ -4,8 +4,17 @@
 
 
     //generales
+
     .texto-principal {
-        padding-top: 10px;
+        width: 120%;
+        height: 320px;
+        padding-top: 35px;
+        transition: ease-out;
+        box-shadow: black 0px -1px 15px;
+    
+        .texto-principal__titulo:hover {
+            text-shadow: none;
+        }
     }
 
     .rubiiecito {

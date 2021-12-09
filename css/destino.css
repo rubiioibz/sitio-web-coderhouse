@@ -312,7 +312,13 @@
 /*SMARTPHONE*/
 @media (max-width: 599px) {
   .texto-principal {
-    padding-top: 10px; }
+    width: 120%;
+    height: 320px;
+    padding-top: 35px;
+    transition: ease-out;
+    box-shadow: black 0px -1px 15px; }
+    .texto-principal .texto-principal__titulo:hover {
+      text-shadow: none; }
   .rubiiecito {
     transition: none; }
   .rubiiecito:hover {
@@ -445,6 +451,17 @@ body {
 .bold {
   font-weight: bold; }
 
+.carrusel {
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-top: 10px; }
+
+@media (max-width: 899px) {
+  .carrusel {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 10px; } }
+
 .carousel-item__img {
   border-radius: 25px; }
 
@@ -463,6 +480,16 @@ body {
   box-shadow: black 0px -1px 15px; }
   .texto-principal .texto-principal__titulo:hover {
     text-shadow: white 1px 1px 15px; }
+
+@media (max-width: 599px) {
+  .texto-principal {
+    width: 120%;
+    height: 320px;
+    padding-top: 35px;
+    transition: ease-out;
+    box-shadow: black 0px -1px 15px; }
+    .texto-principal .texto-principal__titulo:hover {
+      text-shadow: none; } }
 
 .caja-uno {
   width: 50%;

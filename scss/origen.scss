@@ -40,6 +40,23 @@ body {
     font-weight: bold;
 }
 
+.carrusel {
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 10px;
+}
+
+@media (max-width: 899px) {
+
+
+    //generales
+    .carrusel {
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 10px;
+        }
+}
+
 .carousel-item__img {
     border-radius: 25px;
 }
@@ -62,6 +79,23 @@ body {
 
     .texto-principal__titulo:hover {
         text-shadow: white 1px 1px 15px;
+    }
+}
+
+@media (max-width: 599px) {
+
+
+    //generales
+    .texto-principal {
+        width: 120%;
+        height: 320px;
+        padding-top: 35px;
+        transition: ease-out;
+        box-shadow: black 0px -1px 15px;
+    
+        .texto-principal__titulo:hover {
+            text-shadow: none;
+        }
     }
 }
 
