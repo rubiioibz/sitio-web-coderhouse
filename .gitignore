@@ -7,3 +7,6 @@ package.json
 
 # Ignorar todos los archivos de texto
 *.txt
+
+# Carpeta de posbile material a usar 
+posible_material
