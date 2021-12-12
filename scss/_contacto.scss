@@ -3,7 +3,7 @@
 .contacto {
     box-shadow: 1px 1px 200px 2px rgba(0, 0, 0, 1);
     padding: 10px;
-    border-radius: 10%;
+    border-radius: 20px;
 
 
     .contacto__titulo {
@@ -16,7 +16,9 @@
 }
 
 .espacio {
-    align-self: center;
+    align-self: flex-start;
+    position: sticky;
+    top: 130px;
 
     .espacio__img {
         border: black solid 2px;

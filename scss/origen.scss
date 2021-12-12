@@ -1,25 +1,32 @@
 //IMPORTS
+
 @import "colores";
 @import "boton-arriba";
 @import "contacto";
 @import "galeria";
 @import "operaciones";
-@import "medias";
-
-
+@import "quien";
 
 
 //VARIABLES 
 $amarillo-rubiio: rgb(240, 204, 4);
-$color_fondo : linear-gradient(120deg, #28285f 50% ,#1f5044 , #2a7288 );
+$color_fondo : linear-gradient(45deg, #2a1e44 50% ,#0e4961 , #134738 );
 
 
-
+/*GENERALES E INDEX*/
 * {
-    font-family: 'Patrick Hand SC', cursive, sans-serif;
+    font-family: 'Quicksand', sans-serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Patrick Hand SC', cursive, sans-serif;
+}
+
+.nav-item a {
+    font-family: 'Patrick Hand SC', cursive, sans-serif;
 }
 
 body {
@@ -41,28 +48,35 @@ body {
 }
 
 .carrusel {
-    padding-left: 150px;
-    padding-right: 150px;
+    padding-left: 80px;
+    padding-right: 80px;
     padding-top: 10px;
 }
 
-@media (max-width: 899px) {
+.carousel-item {
+    border-radius: 25px;
+    background-color: black;
+    background-blend-mode: darken;
 
-
-    //generales
-    .carrusel {
-        padding-left: 0px;
-        padding-right: 0px;
-        padding-top: 10px;
+    .carousel-item__img {
+    border-radius: 25px;
+    opacity: 0.7;
     }
 }
 
-.carousel-item__img {
-    border-radius: 25px;
-}
-
 .carousel-caption {
-    text-shadow: black 1px 1px 4px;
+    text-shadow: black 2px 2px 1px;
+
+    h5 {
+        font-family: 'Permanent Marker', cursive;
+        font-size: 4em;
+    }
+
+    p {
+        font-size: 2em;
+        color: rgb(226, 226, 226);
+    }
+    
 }
 
 .carta-uno {
@@ -70,8 +84,7 @@ body {
 }
 
 .texto-principal {
-    width: 120%;
-    height: 250px;
+    min-height: 250px;
     border-radius: 0% 0% 40% 40%;
     padding-top: 10px;
     transition: ease-out;
@@ -112,7 +125,7 @@ body {
     font-size: 20px;
 
     &:hover {
-        background-color: rgb(0, 0, 0);
+        background-color: rgb(46, 33, 117);
         color: $amarillo-rubiio;
         font-weight: bold;
     }
@@ -129,7 +142,15 @@ body {
 
     .rubiio-movil__img {
         border-radius: 20px;
+        transition: all ease-out 0.5s;
+
+        &:hover {
+            transform: scale(1.02);
+            
+        }
     }
+    
+
 
     .rubiio-movil__titulo {
         text-align: center;
@@ -157,8 +178,16 @@ body {
     .rubiiecito__img:hover {
         transform: scale(1.08);
     }
+
+    span {
+    display: flex;
+    align-items: center;
+    font-family: 'Permanent Marker', cursive;
+    }
 }
 
+
+/*OFFCANVAS PRINCIPIAL*/
 $coloretes: (
     1: blue,
     2: red,
@@ -182,16 +211,12 @@ $coloretes: (
     
 }
 
-.quien-soy__img {
-    box-shadow: 2px 2px 100px 2px rgba(0, 0, 0, 1);
-}
-
 .cuarta {
     background-image: url(../img/latas.jpg);
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     background-color: rgba(1, 1, 1, 0.3);
     background-blend-mode: darken;
     position: relative;
@@ -199,6 +224,8 @@ $coloretes: (
     display: inline-block;
     border-radius: 30px;
     margin-bottom: 50px;
+    margin-top: 50px;
+    box-shadow: black 0px -1px 30px;
 
     .cuarta__fila {
         
@@ -225,3 +252,5 @@ $coloretes: (
 
 }
 
+
+@import "medias";
