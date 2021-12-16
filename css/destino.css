@@ -413,7 +413,12 @@ body {
     border-radius: 20px;
     transition: all ease-out 0.5s; }
     .rubiio-movil .rubiio-movil__img:hover {
-      transform: scale(1.02); }
+      opacity: 0.4;
+      -webkit-transition: opacity 500ms;
+      -moz-transition: opacity 500ms;
+      -o-transition: opacity 500ms;
+      -ms-transition: opacity 500ms;
+      transition: opacity 500ms; }
   .rubiio-movil .rubiio-movil__titulo {
     text-align: center; }
   .rubiio-movil .rubiio-movil__parrafo {
@@ -498,6 +503,40 @@ body {
       cursor: not-allowed;
       text-shadow: white 1px 1px 10px; }
 
+.quinta {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px; }
+  .quinta .div-imagen {
+    display: inline-block;
+    position: relative;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: black 2px 2px 20px; }
+    .quinta .div-imagen div {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      padding: 10px;
+      margin: 0;
+      color: white;
+      margin: 20px;
+      font-size: 28px; }
+    .quinta .div-imagen .desvanecer {
+      border-radius: 20px;
+      width: 100%; }
+      .quinta .div-imagen .desvanecer:hover {
+        opacity: 0.07;
+        -webkit-transition: opacity 500ms;
+        -moz-transition: opacity 500ms;
+        -o-transition: opacity 500ms;
+        -ms-transition: opacity 500ms;
+        transition: opacity 500ms; }
+
 /*SMARTPHONE*/
 @media (max-width: 599px) {
   .carrusel {
@@ -534,6 +573,12 @@ body {
     transition: none; }
     .rubiio-movil .rubiio-movil__img:hover {
       transform: none; }
+  .quinta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px; }
   .galeria1 .galeria1__col-galeria img {
     border: #9e9e9e solid 4px;
     border-radius: 20%;
@@ -596,7 +641,7 @@ body {
     grid-row: span 1; } }
 
 /*TABLET*/
-@media (min-width: 600px) and (max-width: 899px) {
+@media (min-width: 600px) and (max-width: 999px) {
   .carrusel {
     padding-left: 0px;
     padding-right: 0px;
@@ -606,6 +651,51 @@ body {
     transition: none; }
     .rubiio-movil .rubiio-movil__img:hover {
       transform: none; }
+  .cuarta .cuarta__fila h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+    color: white;
+    justify-content: center;
+    text-shadow: white 1px 1px 10px;
+    padding: 10px; }
+    .cuarta .cuarta__fila h3:hover {
+      cursor: none; }
+  .quinta {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px; }
+    .quinta .div-imagen {
+      display: inline-block;
+      position: relative;
+      margin: 20px;
+      border-radius: 20px;
+      box-shadow: black 2px 2px 20px; }
+      .quinta .div-imagen div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        padding: 10px;
+        margin: 0;
+        color: white;
+        margin: 20px;
+        font-size: 16px; }
+      .quinta .div-imagen .desvanecer {
+        border-radius: 20px;
+        width: 100%; }
+        .quinta .div-imagen .desvanecer:hover {
+          opacity: 0.07;
+          -webkit-transition: opacity 500ms;
+          -moz-transition: opacity 500ms;
+          -o-transition: opacity 500ms;
+          -ms-transition: opacity 500ms;
+          transition: opacity 500ms; }
   .contenedor-pixel {
     width: 100%; }
     .contenedor-pixel .grid-pixel {
