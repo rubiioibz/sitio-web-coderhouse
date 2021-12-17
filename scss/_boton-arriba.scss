@@ -6,7 +6,7 @@
 $amarillo-rubiio: rgb(240, 204, 3);
 
 .arriba {
-    margin: 1px;
+    margin: 40px;
 
     .arriba__link {
         color:white;
@@ -16,10 +16,8 @@ $amarillo-rubiio: rgb(240, 204, 3);
         border-color:white;
         text-decoration:none;
         transition:all .3s ease-out;
+        font-family: 'Patrick Hand SC', cursive, sans-serif;
         
-        
-        
-
     }
     
     .arriba__link:before {
