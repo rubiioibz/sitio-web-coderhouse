@@ -112,6 +112,7 @@
             box-shadow: black 2px 2px 20px;
             border: rgb(158, 158, 158) solid 4px;
             border-radius: 20%;
+            object-fit: cover;
 
             &:hover {
                 transition: all ease-out 0.3s;
@@ -133,6 +134,7 @@
             box-shadow: black 2px 2px 20px;
             border: rgb(158, 158, 158) solid 4px;
             border-radius: 20%;
+            
 
             &:hover {
                 transition: all ease-out 0.3s;
