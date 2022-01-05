@@ -16,6 +16,14 @@
     }
 }
 
+.fa-sign-in-alt {
+    color: white;
+
+    &:hover {
+        color: $amarillo-rubiio;
+    }
+}
+
 .fa-home {
     font-size: 20px;
 }

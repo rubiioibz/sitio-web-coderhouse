@@ -327,6 +327,11 @@
   .fa-instagram:hover {
     color: #f0cc03; }
 
+.fa-sign-in-alt {
+  color: white; }
+  .fa-sign-in-alt:hover {
+    color: #f0cc03; }
+
 .fa-home {
   font-size: 20px; }
 
@@ -342,6 +347,9 @@
 .fa-hand-point-right {
   font-size: 30px;
   margin-left: 20px; }
+
+.loginContainer {
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.4); }
 
 /*GENERALES E INDEX*/
 * {
