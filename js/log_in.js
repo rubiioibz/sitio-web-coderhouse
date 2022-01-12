@@ -1,20 +1,29 @@
 
-alert ("Hola")
+//LOGIN
 
-let nombre = prompt ("Escriba su nombre");
-let apellido = prompt ("Escriba su apellido");
+let user = "matias";
+let pass = "cris";
 
-alert ("Bienvenido " + nombre + " " + apellido);
+let userName = prompt("Ingrese nombre de Usuario:");
+let userPass = prompt("Ingrese contraseña:");
 
-let edad = prompt ("Cuantos años tienes?");
+while((user != userName) || (pass != userPass)){
 
-if (edad >= 18) {
-    alert ("tienes " + edad + " años, eres mayor de edad, puedes ingresar.");
+    if(user == userName && pass == userPass){
+        alert("Bienvenido al Sitio web de Matias Mattera");
     }
-else if (edad < 18) {
-    alert ("Eres menor de edad, no puedes entrar");
-}
-else {
-    alert ("Valor introducido NO valido.")
-};
+    else if ((user != userName) && (pass != userPass)){
+        alert("Usuario y contraseña incorrecto");
+    }
+    else if (user != userName){
+        alert("Nombre de usuario incorrecto");
+    }
+    else if (pass != userPass){
+        alert("Contraseña incorrecta");
+    }else{
+        alert("ERROR");
+    };
 
+    userName = prompt("Ingrese nombre de Usuario:");
+    userPass = prompt("Ingrese contraseña:");
+}
