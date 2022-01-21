@@ -251,6 +251,11 @@
     
     }
 
+    //tienda
+    .gridTienda{
+        grid-template-columns: 1fr;
+    }
+
 }
 
 
@@ -479,5 +484,10 @@
             display: none;
         }
     
+    }
+
+    //tienda
+    .gridTienda{
+        grid-template-columns: repeat(2, 1fr);
     }
 }
