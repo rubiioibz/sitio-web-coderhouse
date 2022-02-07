@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../css/destino.css" />
-    <link rel="icon" href="../../img/logo-no-fondo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="icon" href="/img/logo-no-fondo.png" type="image/x-icon" />
+
+    <title>Rubiio - Tienda</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,6 +23,11 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <!--ANIMATE-CSS-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
     <!--SEO-->
     <meta
@@ -28,10 +36,11 @@
     />
     <meta name="description" content="Tienda de Arte de Rubiio" />
 
-    <title>Rubiio - Tienda</title>
   </head>
+
   <body>
-    <!--MENU-->
+
+    <!--NAVEGADOR-->
     <header class="sticky-top">
       <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark py-0">
         <div class="container-fluid">
@@ -39,7 +48,7 @@
             ><img
               width="60px"
               class="d-inline-block align-text-top img-fluid"
-              src="../../img/logo-no-fondo.png"
+              src="/img/logo-no-fondo.png"
               alt="logo"
           /></a>
 
@@ -124,118 +133,119 @@
                 ><i class="fab fa-instagram mx-2"></i
               ></a>
 
-              <a href="#"
-                ><i class="fas fa-shopping-cart mx-2"></i></a>
-
+              <a href="#"><i class="fas fa-shopping-cart mx-2"></i></a>
             </div>
           </div>
         </div>
       </nav>
     </header>
 
-    <main class="row justify-content-center text-light m-0">
-
-        <h1 class="text-warning text-center my-3 tituloTienda">Tienda</h1>
-
-        <div class="gridTienda col-9">
-            
-            <div class="producto">
-                <a class="producto__link" href="producto.html">
-                    <img class="producto__imagen" src="../../img/cuadros/6-min.jpg" alt="imagen camisa">
-                    <div class="producto__informacion">
-                        <p class="producto__nombre">"Rubiio Posca"</p>
-                        <p class="producto__precio">€100</p>
-                        <input class="producto__carrito--btn" type="submit" value="Agregar al carrito">
-                    </div>
-                </a>
-            </div>
     
-            <div class="producto">
-                <a class="producto__link" href="producto.html">
-                    <img class="producto__imagen" src="../../img/cuadros/7.jpg" alt="imagen camisa">
-                    <div class="producto__informacion">
-                        <p class="producto__nombre">"Drubiio"</p>
-                        <p class="producto__precio">€15</p>
-                        <input class="producto__carrito--btn" type="submit" value="Agregar al carrito">
-                    </div>
-                </a>
-            </div>
-    
-            <div class="producto">
-                <a class="producto__link" href="producto.html">
-                    <img class="producto__imagen" src="../../img/cuadros/9.jpg" alt="imagen camisa">
-                    <div class="producto__informacion">
-                        <p class="producto__nombre">"Mache"</p>
-                        <p class="producto__precio">€25</p>
-                        <input class="producto__carrito--btn" type="submit" value="Agregar al carrito">
-                    </div>
-                </a>
-            </div>
-    
-            <div class="producto">
-                <a class="producto__link" href="producto.html">
-                    <img class="producto__imagen" src="../../img/cuadros/10-min.jpg" alt="imagen camisa">
-                    <div class="producto__informacion">
-                        <p class="producto__nombre">"BartFall"</p>
-                        <p class="producto__precio">€25</p>
-                        <input class="producto__carrito--btn" type="submit" value="Agregar al carrito">
-                    </div>
-                </a>
-            </div>
-    
-            <div class="producto">
-                <a class="producto__link" href="producto.html">
-                    <img class="producto__imagen" src="../../img/cuadros/2-min.jpg" alt="imagen camisa">
-                    <div class="producto__informacion">
-                        <p class="producto__nombre">"Regular Show</p>
-                        <p class="producto__precio">€30</p>
-                        <input class="producto__carrito--btn" type="submit" value="Agregar al carrito">
-                    </div>
-                </a>
-            </div>
-    
-            <div class="producto">
-                <a class="producto__link" href="producto.html">
-                    <img class="producto__imagen" src="../../img/cuadros/3-min.jpg" alt="imagen camisa">
-                    <div class="producto__informacion">
-                        <p class="producto__nombre">"Setario</p>
-                        <p class="producto__precio">€60</p>
-                        <input class="producto__carrito--btn" type="submit" value="Agregar al carrito">
-                    </div>
-                </a>
-            </div>
-        </div>
-    </main>
 
 
-    <footer class="pt-4">
-      <div class="row bannerCompras">
+    <main>
+      <h1 id="titulo1" class="text-warning text-center my-3 tituloTienda">
+        Tienda
+      </h1>
 
-        <div class="col-sm-12 col-md-3 candado">
-          <i class="fas fa-lock fa-5x"></i>
-        </div>
-
-        <div class="col-sm-12 col-md-3 seguras">
+      <section class="h-100 carritoContenedor">
+        <div class="container h-100 py-5">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-10">
       
-          <h4>Realiza tus compras<br />100 % Seguras</h4>
-          <p>PayPal y tarjeta de crédito <br> Visa o Mastercard </p>
-        </div>
-
-        <div class="col-sm-12 col-md-3 caja">
-          <i class="fas fa-box-open fa-5x"></i>
-        </div>
-
-        <div class="col-sm-12 col-md-3 horas">
+              <div class="d-flex justify-content-between align-items-center mb-4">
+                <h3 class="fw-normal mb-0 text-black fw-bold">Tu carrito</h3>
+              </div>
+  
+              <div class="elCarrito">
+                <!--
           
-          <h4>Envíos seguros y<br>en 24 horas</h4>
-          <p>Gracias a Correos Express y <br> Correos certificado, con extra de protección</p>
-        </div>
+                  Carrito fila
+          
+                -->
+              </div>
       
+              <div class="card">
+                <div class="card-body m-auto text-center">
+                  <button type="button" class="btn btn-warning btn-block btn-lg btnComprar">Comprar</button>
+                  <button type="button" class="btn btn-secondary btn-block btn-lg btnVaciar">Vaciar Carrito</button>
+                  <p class="p-4 m-auto totalContenedor">Total: <span class="total">€0,00</span></p>
+                </div>
+              </div>
+      
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="mainTienda">
+        <div class="contenedorSelector">
+          <select name="selectorCategoria" id="selector">
+            <option value="todos">Todos</option>
+            <option value="menorPrecio">Menor precio a mayor</option>
+            <option value="mayorPrecio">Mayor precio a menor</option>
+            <optgroup label="Tamaño:">
+              <option value="cuadrosChicos">Chicos</option>
+              <option value="cuadrosMedianos">Medianos</option>
+              <option value="cuadrosGrandes">Grandes</option>
+            </optgroup>
+          </select>
+
+          <div class="contenedorImg">
+            <img class="img-fluid imgSelector" src="/img/cuadrosTienda/sad.jpg" alt="">
+          </div>
+        </div>
+
+        <div class="text-light m-0">
+          <div id="contenedorProducto" class="gridTienda col-9 mx-auto">
+            <!--
+              
+            Aca se muestran los productos de la tienda
+            
+            -->
+          </div>
+        </div>
       </div>
 
+      <div class="row bannerCompras m-0">
+        <div
+          class="col-sm-12 col-md-3 preContenedorCompras animate__animated animate__bounceInLeft animate__slow"
+        >
+          <div class="contenedorCompras">
+            <div class="candado">
+              <i class="fas fa-lock fa-5x"></i>
+            </div>
+  
+            <div class="seguras">
+              <h4>Realiza tus compras<br />100 % Seguras</h4>
+              <p>PayPal y tarjeta de crédito Visa o Mastercard</p>
+            </div>
+          </div>
+        </div>
+  
+        <div
+          class="col-sm-12 col-md-3 preContenedorEnvios animate__animated animate__bounceInRight animate__slow"
+        >
+          <div class="contenedorEnvios">
+            <div class="caja">
+              <i class="fas fa-box-open fa-5x"></i>
+            </div>
+  
+            <div class="horas">
+              <h4>Envíos seguros y<br />en 24 horas</h4>
+              <p>
+                Gracias a Correos Express y Correos certificado, con extra de
+                protección
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
 
+    
 
-
+    <footer class="pt-0">
       <div class="prefooter container-fluid text-light">
         <div class="logo2">
           <img src="../../img/logo-2.png" alt="logo2" />
@@ -255,6 +265,7 @@
         <div class="mapa">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d198515.1309236845!2d1.2773029389524528!3d38.97425921212647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1299476385093943%3A0x9064725cd8426d6!2sIbiza!5e0!3m2!1ses-419!2ses!4v1640097050156!5m2!1ses-419!2ses"
+            title="mapa"
             width="350"
             height="250"
             style="border: 0"
@@ -270,8 +281,10 @@
       </div>
     </footer>
 
-    <!--Javascript-->
-    <script src=""></script>
+    <!--Clase y Productos-->
+    <script src="/js/stockProductos.js"></script>
+    <!--Javascript carrito-->
+    <script src="/js/carrito.js"></script>
 
     <!--FONTAWESOME-->
     <script
@@ -279,6 +292,7 @@
       crossorigin="anonymous"
     ></script>
 
+    <!--Bootstrap-->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
       integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
@@ -290,4 +304,5 @@
       crossorigin="anonymous"
     ></script>
   </body>
+
 </html>
