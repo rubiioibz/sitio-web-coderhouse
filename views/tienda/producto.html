@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="/css/main.css" />
+        <link rel="stylesheet" href="/css/destino.css" />
         <link rel="icon" href="../img/logo-no-fondo.png" type="image/x-icon" />
     
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -43,7 +43,7 @@
               ><img
                 width="60px"
                 class="d-inline-block align-text-top img-fluid"
-                src="../img/logo-no-fondo.png"
+                src="/img/logo-no-fondo.png"
                 alt="logo"
             /></a>
   
@@ -114,10 +114,16 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="../contacto.html"
+                  <a class="nav-link" href="../contacto.html"
                     ><i class="far fa-address-card mx-1"></i>Contacto</a
                   >
                 </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="../tienda/tienda.html"
+                    >Tienda</a
+                  >
+                </li>
+
               </ul>
               <div class="social-menu">
                 <a href="https://github.com/rubiioibz"
@@ -139,28 +145,30 @@
 
       <main class="text-light">
 
-        <h1 class="text-center m-2">Rubiio Posca</h1>
+        <section class="contenedorProducto2">
+          <!-- <h1 class="text-center m-2">Rubiio Posca</h1>
 
-        <div class="gridProducto">
+          <div class="gridProducto">
 
-            <img class="imgCuadro img-fluid" src="/img/cuadros/6.jpg" alt="imagen rubiio posca">
+              <img class="imgCuadro img-fluid" src="/img/cuadrosTienda/6.jpg" alt="imagen rubiio posca">
 
-            <div class="contenedorProducto">
+              <div class="contenedorProducto">
 
-              <form class="formProducto">
-                <input class="formCampoProducto" type="number" placeholder="Cantidad" min="1">
-                <input class="formSubmit" type="submit" value="Agregar al carrito">
-              </form>
-              
-              <p class="text-center m-4">Cuadro realizado enteramente en rotuladores Posca </p>
-            </div>
-        </div>
+                <form class="formProducto">
+                  <input class="formCampoProducto" type="number" placeholder="Cantidad" min="1">
+                  <input class="formSubmit" type="submit" value="Agregar al carrito">
+                </form>
+                
+                <p class="text-center m-4">Cuadro realizado enteramente en rotuladores Posca </p>
+              </div>
+          </div> -->
+        </section>
     
       <footer class="pt-4">
 
         <div class="prefooter container-fluid text-light">
           <div class="logo2">
-            <img src="../img/logo-2.png" alt="logo2" />
+            <img src="/img/logo-2.png" alt="logo2" />
           </div>
   
           <div class="redes">
@@ -194,7 +202,8 @@
       </footer>
 
       <!--Javascript carrito-->
-      <script src=""></script>
+      <script src="/js/stockProductos.js"></script>
+      <script src="/js/producto.js"></script>
   
       <!--FONTAWESOME-->
       <script
